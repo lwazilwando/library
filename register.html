@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <title>Register page</title>
+            <link rel="stylesheet" href="reg.css">
+            
+        </head>
+        <body>
+            <div class="register-box">
+                <img src="./images/face.png" alt="">
+                <h1>Register here</h1>
+
+                <form id="formReg">
+                    <input type="text" name="name" class="reg-box" placeholder="name" required id="name1">
+                    <input type="text" name="surname" class="reg-box"  placeholder="Surname" required id="surname">
+                    <input type="email" name="email"  class="reg-box" placeholder="Email" required id="email2">
+                    <input type="text" name="number" class="reg-box"  placeholder="Phone Number" id="number">
+                    <p>Insert your Image</p>
+                    <input type="file" class="file-upload-input"  onchange="readURL(this)" accept="Image/*">
+                    <input type="password" name="password" class="reg-box"  placeholder="Password" required id="password1">
+                    <input type="password" name="password" class="reg-box"  placeholder="Confirm Password" required id="confPass2">
+                
+                    <button type="button" onclick="regForm()" class="btn" >Register</button>
+                    <p>Sign in here ! <a href="login.html">SignIn</a></p>
+
+
+
+                </form>
+
+
+
+            </div>
+            <script src="scipt.js"></script>
+        </body>
+    </html>   

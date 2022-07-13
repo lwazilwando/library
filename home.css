@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@100;200;300;500;900&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    position: relative;
+    max-width: 100px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background-color: darkkhaki;
+}
+.content{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    border-radius: 30px;
+}
+span{
+    color: coral;
+}
+h3{
+    top: 15%;
+    position: absolute;
+    color: crimson;
+}
+.books{
+    
+    padding: 20px 100px;
+    
+}
+.books a{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px ;
+    margin:0% ;
+    min-height: 50vh;
+}
+.first{
+    display: flex;
+}
+.second{
+    display: flex;
+}
+.third{
+    display: flex;
+}
+footer{
+    text-align: center;
+}
+header ul li ul{
+    display: none ;
+    position: absolute;
+    background-color: rgb(100, 247, 16);
+}
+header ul li ul li a{
+   padding: 5px;
+}
+header ul li ul li a:hover{
+    background-color: blue;
+ }
+ header ul li ul li a{
+    width: 100px;
+    border-radius: 5px;
+ }
+ header ul li:hover ul{
+    display: block ;
+ }
+ .moving{
+     position: fixed;
+     height: 100%;
+     width: 100%;
+ }
+ .moving .moving-pic{
+     box-sizing: content-box;
+     padding-bottom: 300px;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-image: url('./books/lwazi.jpg');
+     background-size: cover;
+     animation: moving 30s linear infinite;
+ }
+@keyframes moving{
+    from{
+        transform:translateY(0)
+    }
+    to{
+        transform: translateY(-300px);
+    }
+}
+ 
